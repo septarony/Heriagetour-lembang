@@ -4,20 +4,20 @@ const assets = [
   './index.html',
   './style.css',
   './app.js',
-  './manifest.json'
+  './images/icon-192.png',
+  './images/icon-512.png',
+  './images/Welcome.png',
+  './images/lembang-fault.png'
 ];
 
-// Tahap Instalasi (Menyimpan file ke memori HP)
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      console.log('Menyimpan aset ke cache...');
       return cache.addAll(assets);
     })
   );
 });
 
-// Tahap Fetch (Mengambil data dari memori saat internet mati)
 self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(res => {
