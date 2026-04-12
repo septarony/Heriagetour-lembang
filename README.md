@@ -14,7 +14,7 @@ A professional Progressive Web App (PWA) designed to enhance the touring experie
 - **Deployment:** GitHub Pages
 
 ## 🚀 How to Use
-1. Visit the [Live Demo]([https://septarony.github.io/Heriagetour-lembang/])
+1. Visit the [Live Demo](https://septarony.github.io/Heriagetour-lembang/)
 2. On your mobile browser, select "Add to Home Screen" to install it as an app.
 3. Start exploring the heritage of Lembang!
 
